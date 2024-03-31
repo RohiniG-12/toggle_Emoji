@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Face Chooser</title>
+</head>
+<style>
+    body{
+        background-image: radial-gradient( circle farthest-corner at 6.4% 9.8%,  rgba(88,242,174,1) 0%, rgba(0,130,240,1) 97.9% );
+        height: 100vh;
+    }
+    .heading{
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .container{
+        width: 400px;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .img-container{
+        height: 250px;
+        display: block;
+        margin: auto;
+   }
+    .sub-container2{
+        display: block;
+    
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 20px;
+
+    }
+    .smallimg{
+        height: 40px;
+        margin: 5px;
+      
+    }
+
+</style>
+<body>
+    <center><h1 class="heading">Emoji Faces</h1></center>
+    <div class="container">
+        <div class="sub-container1">
+            <img src="love.png" id="img" class="img-container"/>
+        </div>
+        <div class="sub-container2">
+            <img src="laugh.png" class="smallimg" onclick="emojitoggle()"/>
+            <img src="wink.png" class="smallimg" onclick="emojitoggle1()"/>
+            <img src="sad.png" class="smallimg" onclick="emojitoggle2()"/>
+            <img src="love.png" class="smallimg" onclick="emojitoggle3()"/>
+          </div>
+
+    </div>
+    <script>
+        function emojitoggle()
+            {
+            const emojiElement=document.getElementById('img')
+            emojiElement.src='cry.png';       
+           }
+         function emojitoggle1()
+            {
+            const emojiElement=document.getElementById('img')
+            emojiElement.src='love.png';       
+            }
+         function emojitoggle2()
+              {
+            const emojiElement=document.getElementById('img')
+            emojiElement.src='sad.png';       
+            }
+        function emojitoggle3()
+              {
+            const emojiElement=document.getElementById('img')
+            emojiElement.src='wink.png';    
+            }
+
+    </script>
+</body>
+</html>
